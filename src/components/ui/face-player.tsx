@@ -67,7 +67,7 @@ const FacePlayer = ({
 
   return (
     <div className={cn("w-full shadow rounded overflow-hidden", className)} {...props}>
-      <video ref={videoRef} autoPlay width="100%" src={undefined}></video>
+      <video ref={videoRef} autoPlay width="100%" src={undefined} playsInline></video>
     </div>
   );
 };

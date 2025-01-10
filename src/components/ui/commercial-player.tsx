@@ -41,7 +41,7 @@ const CommercialPlayer = ({
 
   return (
     <div className={cn("w-full shadow rounded overflow-hidden", className)} {...props}>
-      <video width="100%" src={videoSource(commercialId)} onEnded={onVideoEnded}></video>
+      <video width="100%" src={videoSource(commercialId)} onEnded={onVideoEnded} playsInline></video>
     </div>
   );
 };
