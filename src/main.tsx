@@ -15,7 +15,7 @@ import { AppState } from "@/app-state";
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <AppState>
-      <BrowserRouter>
+      <BrowserRouter basename="tfm">
         <Routes>
           <Route element={<AppLayout />}>
             <Route index element={<Home />} />

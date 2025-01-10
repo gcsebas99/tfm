@@ -19,6 +19,7 @@ const StatsSelector = ({
   const { navigateDown } = useDeepNavigate();
   const [selectedCampaign, setSelectedCampaign] = useState<number>(0);
   const [selectedCommercial, setSelectedCommercial] = useState<number>(0);
+  console.log("selectedCommercial", selectedCommercial);
 
   const currentCommercials:MarketingCommercial[] = useMemo(() => {
     const campaignId = campaigns[selectedCampaign].id;

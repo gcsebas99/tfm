@@ -27,6 +27,7 @@ const FacePlayer = ({
 }: FacePlayerProps) => {
   const videoRef = useRef(null);
   const [streamStarted, setStreamStarted] = useState<boolean>(false);
+  console.log("streamStarted", streamStarted);
 
   useEffect(() => {
     startPlaying();
